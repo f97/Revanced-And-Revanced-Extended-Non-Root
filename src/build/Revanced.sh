@@ -25,6 +25,7 @@ revanced_dl(){
 	split_editor "youtube" "youtube-x86" "exclude" "split_config.arm64_v8a split_config.armeabi_v7a split_config.x86_64"
 	patch "youtube-x86" "revanced"
 	# Patch Youtube x86_64
+        version "19.50.40"
 	get_patches_key "youtube-revanced" 
 	split_editor "youtube" "youtube-x86_64" "exclude" "split_config.arm64_v8a split_config.armeabi_v7a split_config.x86"
 	patch "youtube-x86_64" "revanced"
