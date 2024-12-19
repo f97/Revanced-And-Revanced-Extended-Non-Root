@@ -41,7 +41,7 @@ revanced_dl(){
 	# Patch Facebook:
 	# Arm64-v8a
 	get_patches_key "facebook"
- 	version="249.0.0.47.118"
+ 	version="494.0.0.55.73"
 	get_apk "com.facebook.katana" "facebook-arm64-v8a" "facebook" "facebook-2/facebook/facebook" "arm64-v8a" "nodpi" "Android 9.0+"
 	patch "facebook-arm64-v8a" "revanced"
 }
