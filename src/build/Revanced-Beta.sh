@@ -41,7 +41,7 @@ revanced_dl(){
 	# Patch Facebook:
 	# Arm64-v8a
 	get_patches_key "facebook"
-	version="249.0.0.47.118"
+	version="494.0.0.55.73"
 	get_apk "com.facebook.katana" "facebook-arm64-v8a-beta" "facebook" "facebook-2/facebook/facebook" "arm64-v8a" "nodpi" "Android 9.0+"
 	patch "facebook-arm64-v8a-beta" "revanced"
 }
@@ -95,7 +95,7 @@ revanced_dl(){
 	revanced_dl
 	# Patch Lightroom:
 	get_patches_key "lightroom"
- 	version="10.1.0"
+ 	version="10.0.2"
 	get_apk "com.adobe.lrmobile" "lightroom-beta" "lightroom" "adobe/lightroom/lightroom"
 	patch "lightroom-beta" "revanced"
 	# Patch RAR:
