@@ -156,6 +156,14 @@ revanced_dl(){
 	get_apk "com.google.android.apps.youtube.music" "youtube-music-beta-armeabi-v7a" "youtube-music" "google-inc/youtube-music/youtube-music" "armeabi-v7a"
 	patch "youtube-music-beta-armeabi-v7a" "revanced"
 }
+10() {
+	revanced_dl
+	# Patch Duolingo
+	get_patches_key "Duolingo"
+	lock_version="1"
+	get_apk "com.duolingo" "duolingo-beta" "duolingo" "duolingo/duolingo-duolingo/duolingo-language-lessons" "Bundle"
+	patch "duolingo-beta" "revanced"
+}
 case "$1" in
     1)
         1
@@ -183,5 +191,8 @@ case "$1" in
         ;;
     9)
         9
+        ;;
+    10)
+        10
         ;;
 esac
